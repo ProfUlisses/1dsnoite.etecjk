@@ -47,10 +47,10 @@ a{
 }
 a:hover{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 0px 0px inset;
-    color: rgb(228, 113, 12);
+    color: rgb(142, 171, 205);
 }
 a:active{
-    background-color: rgb(255, 208, 0);
+    background-color: rgb(82, 82, 82);
 }
 /*Footer*/
 
