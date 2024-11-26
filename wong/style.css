@@ -1,0 +1,132 @@
+@font-face {
+    font-family: trabaio;
+    src: url(fonte/SpaceMono-Regular.ttf);
+}
+
+body{
+   background: linear-gradient(to bottom, #003366,  #336699,   #66a3cc,  #99c2ff )
+}
+
+header {
+  background: linear-gradient(to right, #7e3e3e, #3a2626, #435966);
+  color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: trabaio;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.fotos {
+  height: 150px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 50px;
+  transition: transform 0.7s ease;
+}
+
+.diretor:hover .fotos {
+  transform: scale(1.1);
+}
+
+.diretor:hover {
+  cursor: pointer;
+}
+
+.diretor {
+  background: linear-gradient(to right, #524343, #6d4545, #2c1f1f);
+  color: #f5f5f5;
+  padding: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f5f5dc;
+  font-family: trabaio;
+}
+
+.diretor-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.filme {
+  background: linear-gradient(to right, #524343, #6d4545, #2c1f1f);
+  color: #f5f5f5;
+  padding: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f5f5dc;
+  font-family: trabaio;
+}
+.filme-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.filme:hover{
+    cursor: pointer;
+}
+.filme:hover .fotos{
+    transform: scale(1.1);
+    transition: transform 0.7s ease;
+}
+
+@media (max-width: 1024px) {
+    header {
+      font-size: 1.8em;
+    }
+    .diretor, .filme {
+      padding: 5% 8%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      font-size: 1.5em;
+    }
+    .diretor, .filme {
+      padding: 10% 5%;
+    }
+    .fotos {
+      max-width: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      font-size: 1.2em;
+    }
+    .diretor, .filme {
+      padding: 15% 5%;
+    }
+    .fotos {
+      max-width: 200px;
+    }
+    .diretor-info, .filme-info {
+      width: 90%;
+    }
+  }

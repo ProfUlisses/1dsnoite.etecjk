@@ -1,0 +1,93 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #050a10; 
+}
+
+:root {
+    scrollbar-width: none;/* esconder barra de rolagem */
+}
+
+main {
+    padding: 16px;
+}
+
+h1, h2, h4 {
+    color: #f88;
+    font-size: 28px;
+    font-family: "Times New Roman", "Times", serif;
+
+    &:is(h2) {
+        color: #d22;
+        font-size: 36px;
+    }
+}
+
+main {
+    text-align: center;
+}
+
+img {
+    border: 2px solid #a22;
+    border-radius: 8px;
+
+    &.fotos {
+        max-width: 60%;
+    }
+}
+
+#fundo {
+    position: fixed;/* prender posição na tela */
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+    background-image: url("./imagens/bonita-achei.jpg");/* imagem para quebrar a solidez do fundo preto */
+    z-index: -1;/* jogar atrás de tudo */
+    opacity: 0.5;
+}
+
+p:not(li p) {
+    color: #eee;
+    font-size: 24px;
+    font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+    text-align: justify;
+
+    &:first-letter {
+        padding-left: 8%;
+    }
+}
+
+ul, li {
+    color: #eee;
+    font-size: 24px;
+    text-align: justify;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    margin: 50px 0;
+}
+
+li p {
+    display: inline-block;/* encaixar junto da imagem */
+    max-width: 70vw;
+}
+
+li img {
+    display: inline-block;/* encaixar junto do texto */
+    max-width: 10vw;
+
+    margin: 0;
+    margin-left: 16px;
+
+    translate: 0 35%;/* quase centralizar */
+}

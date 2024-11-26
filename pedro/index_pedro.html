@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biografia de Pedro Almodóvar</title>
+    <link rel="stylesheet" href="style/Style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Pedro Almodóvar</h1>
+        <p>Diretor e Cineasta Espanhol</p>
+        <!-- Adicionando a imagem do diretor -->
+        <img src="img/Pedro Almodovar.jpeg"
+            alt="Pedro Almodóvar">
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre Pedro Almodóvar</h2>
+            <p>Pedro Almodóvar Caballero (nascido em 25 de setembro de 1949, em Calzada de Calatrava, Espanha) é um dos
+                diretores de cinema mais renomados da história do cinema mundial. Conhecido por seu estilo único e
+                inovador, Almodóvar se tornou um dos maiores representantes do cinema espanhol contemporâneo.</p>
+            <p>Ao longo de sua carreira, Almodóvar foi responsável por criar uma vasta obra cinematográfica que explora
+                temas como identidade, sexualidade, dor, e relações humanas complexas. Seu trabalho é frequentemente
+                marcado por uma sensibilidade estética vibrante, personagens femininas fortes, e roteiros que desafiavam
+                as convenções sociais.</p>
+
+            <button onclick="mostrarMaisInfo()">Saiba mais sobre sua carreira</button>
+
+            <div id="moreInfo">
+                <h3>Carreira e Realizações</h3>
+                <p>Almodóvar iniciou sua carreira no cinema no final dos anos 1970, após ter se mudado para Madrid e se
+                    envolvido com o movimento cultural "Movida Madrileña". Seu primeiro grande sucesso foi o filme
+                    <em>Todo sobre mi madre</em> (1999), que ganhou o Oscar de Melhor Filme Estrangeiro. Outro de seus
+                    filmes mais aclamados internacionalmente foi <em>Fale com Ela</em> (2002), que lhe rendeu o Oscar de
+                    Melhor Roteiro Original.</p>
+                <p>Além do sucesso comercial, seu trabalho conquistou uma legião de fãs pela habilidade em tratar de
+                    temas difíceis, mas de uma maneira acessível e emocionalmente profunda. Ele é amplamente respeitado
+                    pela forma como utiliza o visual e a música para intensificar as emoções dos personagens, tornando
+                    suas obras verdadeiras obras de arte cinematográficas.</p>
+                <p>Entre seus outros filmes notáveis estão <em>Mulheres à Beira de um Ataque de Nervos</em> (1988),
+                    <em>A Lei do Desejo</em> (1987) e <em>Volver</em> (2006), todos extremamente influentes e aclamados
+                    pela crítica.</p>
+
+                <!-- Imagens lado a lado -->
+                <section>
+                    <h2>Filmes Premiados</h2>
+                    <div class="image-container">
+                        <img src="img/filmes/Premiadofilmes_1994_TudoSobreMinhaMae.jpg"
+                            alt="Todo Sobre Mi Madre">
+                        <img src="img/filmes/PremiadoHable con ella.jpg"
+                            alt="Fala com Ela">
+                    </div>
+                </section>
+
+                <!-- Carrossel de imagens -->
+                <section>
+                    <h2>Filmes</h2>
+                    <div class="carossel-container">
+                        <div class="carossel-images">
+                            <img src="img/filmes/PrimeiroFilme de sucesso.jpeg" alt="A beira de um ataqe de Nervos">
+                            <img src="img/filmes/A carne trêmula.jpg"  alt="A carne trêmula">
+                            <img src="img/filmes/A flor do meu segredo.jpg" alt="A Flor do meu segredo">
+                            <img src="img/filmes/A pele onde eu vivo .jpg"  alt="A pele onde eu vivo">
+                            <img src="img/filmes/Abraços Partidos.jpg" alt="Abraços Partidos">                                                  
+                            <img src="img/filmes/Dor e gloria.jpg" alt="Dor e Glória">
+                            <img src="img/filmes/Julieta.jpg" alt="Julieta">
+                            <img src="img/filmes/Maes paralelas.jpg" alt="Mães Paralelas">
+                            <img src="img/filmes/o ultimo sonho.jpeg" alt="O Ultimo Sonho">
+                            <img src="img/filmes/Volver.jpg" alt="Volver">
+                            <img src="img/filmes/Dor e gloria.jpg" alt="Dor e gloria">
+                            <img src="img/filmes/strange_way_of_life_3.jpeg" alt="Strange way of life 3">                            
+                            <img src="img/filmes/matador.jpeg" alt="Matador">                                                
+                        </div>
+                        <button class="carossel-button carossel-button-left" onclick="mudarImagem(-1)">&#10094</button>
+                        <button class="carossel-button carossel-button-right" onclick="mudarImagem(1)">&#10095;</button>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
