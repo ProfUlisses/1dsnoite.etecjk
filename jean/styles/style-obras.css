@@ -11,7 +11,7 @@ header {
 }
 
 .menu {
-    background-image: url(/assets/images/banner-obras.jpg);
+    background-image: url(../assets/images/banner-obras.jpg);
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     height: 500px;
